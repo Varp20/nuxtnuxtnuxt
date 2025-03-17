@@ -74,4 +74,4 @@ const selectedpic = ref<string>('')
        @apply flex flex-col gap-2 border-purple-500 border bg-red-600 w-72 h-auto items-center hover:border-green-950 hover:border-4 hover:bg-black;  
     }
 
-</style>
+</style>    
