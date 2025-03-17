@@ -1,6 +1,5 @@
 <template>
-  <main class ="flex flex-col gap-4 p-12 justify-center min-h-screen items-center bg-gradient-to-b from-cyan-500 to-green-500 hover:to-blue-800 flex-wrap">
-    <div class="flext gap-4">
+    <div class="flex gap-4">
         <label><input class ="mx-2" type = "radio" value ="cars" v-model = "selectedpic">Cars</label>
         <label><input class ="mx-2" type = "radio" value ="mac" v-model = "selectedpic">Mac</label>
         <label><input class ="mx-2" type = "radio" value ="kchau" v-model = "selectedpic">Kchau!</label>
@@ -28,7 +27,6 @@
             <p class ="text-white text-x1">{{pic.name}}</p>
         </div>
     </div>
-  </main>
 </template>
 
 <script setup lang ="ts">
@@ -40,27 +38,27 @@ interface stking {
 
 const pic1 = reactive<stking>({
     name: 'cars',
-    image: 'assets/images/youtube.png'
+    image: '/mc.jpg'
 })
 
 const pic2 = reactive<stking>({
     name: 'mac',
-    image: 'assets/images/bs.jpg'
+    image: '/bs.jpg'
 })
 
 const pic3 = reactive<stking>({
     name: 'kchau',
-    image: 'assets/images/ma.jpg'
+    image: '/ma.jpg'
 })
 
 const genpic =reactive<stking[]>([
-    {name: 'Bu', image: "/img/by.jpg"},
-    {name: 'ZLodei Britanez', image: "assets/img/CC.jpg"},
-    {name: 'Ama blue dabudi dabudai', image: "assets/img/CW.jpg"},
-    {name: 'Kakoi-to muzhik', image: "assets/img/hs.jpg"},
-    {name: 'Jackson Storm', image: "assets/img/js.jpg"},
-    {name: 'Krutie Usbl bro', image: "assets/img/sf.jpg"},
-    {name: 'It is 5 o clock my dudes', image: "assets/img/pz.jpg"},
+    {name: 'Bu', image: "/by.jpg"},
+    {name: 'ZLodei Britanez', image: "/CC.jpg"},
+    {name: 'Ama blue dabudi dabudai', image: "/CW.jpg"},
+    {name: 'Kakoi-to muzhik', image: "/hs.jpg"},
+    {name: 'Jackson Storm', image: "/js.jpg"},
+    {name: 'Krutie Usbl bro', image: "/sf.jpg"},
+    {name: 'It is 5 o clock my dudes', image: "/pz.jpg"},
 ])
 
 const selectedpic = ref<string>('')

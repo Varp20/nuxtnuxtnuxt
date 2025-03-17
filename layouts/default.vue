@@ -33,11 +33,11 @@
     </div>
     </header>
 
-    <main class ="p-5 flex bg-yellow-500 h-screen">
+    <main class ="p-5 flex flex-col items-center justify-center min-h-screen flex-wrap bg-yellow-500 ">
         <slot />
     </main>
 
-    <footer class="flex flex-row w-full bg-yellow-200 border-t-2 border-green-700 items-center justify-center px-4 py-2 gap-4">
+    <footer class="flex flex-row mt-auto w-full bg-yellow-200 border-t-2 border-green-700 items-center justify-center px-4 py-2 gap-4">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/images/youtube.png" class="w-16 h-16"></a>
         <a href="https://steamcommunity.com/profiles/76561198088932851"><img src="assets/images/steam.jpg" class="w-16 h-16"></a>
         <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%BA%D1%80%D0%BE%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3"><img src="assets/images/wiki.png" class="w-16 h-16 bg-transparent"></a>
